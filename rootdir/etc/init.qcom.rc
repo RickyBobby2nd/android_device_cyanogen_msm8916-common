@@ -66,6 +66,9 @@ on post-fs-data
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
+    # Raise SDCC idle timeout value to 10 seconds
+    write /sys/devices/platform/msm_sdcc.3/idle_timeout 10
+
     # Create /data/time folder for time-services
     mkdir /data/time 0700 system system
 
