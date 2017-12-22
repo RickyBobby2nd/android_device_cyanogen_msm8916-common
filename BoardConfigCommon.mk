@@ -63,6 +63,18 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/vendor/bin/mm-qcamera-daemon=23
 
+# Dex-preopt
+ifeq ($(HOST_OS),linux)
+ ifneq ($(TARGET_BUILD_VARIANT),eng)
+   WITH_DEXPREOPT := true
+   WITH_DEXPREOPT_DEBUG_INFO := false
+   USE_DEX2OAT_DEBUG := false
+   DONT_DEXPREOPT_PREBUILTS := true
+   WITH_DEXPREOPT_PIC := true
+   WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+ endif
+endif
+
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
