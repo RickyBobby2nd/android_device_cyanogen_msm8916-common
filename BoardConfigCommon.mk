@@ -71,6 +71,10 @@ ifeq ($(HOST_OS),linux)
  endif
 endif
 
+# Camera
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+	/system/vendor/bin/mm-qcamera-daemon=23
+
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
