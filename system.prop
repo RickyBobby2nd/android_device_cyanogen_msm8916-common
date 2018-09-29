@@ -34,6 +34,7 @@ persist.hwc.ptor.enable=true
 debug.enable.sglscale=1
 
 # Media
+persist.media.treble_omx=false
 drm.service.enabled=1
 vidc.enc.narrow.searchrange=1
 
