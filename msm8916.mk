@@ -130,10 +130,7 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
     libOmxVdec \
-    libOmxVdecHevc \
-    libOmxSwVencHevc \
     libOmxVenc \
-    libOmxVidcCommon \
     libstagefrighthw
 
 PRODUCT_COPY_FILES += \
