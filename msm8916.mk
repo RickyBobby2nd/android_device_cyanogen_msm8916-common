@@ -89,14 +89,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.0-service
 
-# IMS/Telephony
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # Init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
