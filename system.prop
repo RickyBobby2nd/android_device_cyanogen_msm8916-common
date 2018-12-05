@@ -34,6 +34,7 @@ debug.mdpcomp.idletime=600
 persist.hwc.mdpcomp.enable=true
 persist.hwc.ptor.enable=true
 debug.enable.sglscale=1
+debug.hwui.renderer=opengl
 
 # Media
 drm.service.enabled=1
